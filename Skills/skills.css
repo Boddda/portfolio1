@@ -1,0 +1,528 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    height: 230vh;
+    width: 100%;
+    background-color: rgb(5, 71, 164);
+    font-family: "Poetsen One", sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+
+}
+h3{
+    color: rgb(43, 168, 226);
+    font-size: 30px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+}
+.porthead{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-right: 20px;
+  
+}
+.porthead li a {
+    color: white;
+    margin: 20px 10px;
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.8s;
+}
+.porthead li a:hover{
+    color: rgb(54, 109, 211);
+
+}
+.openMenu{
+    font-size: 25px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(0, 89, 255);
+}
+.closeMenu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:rgb(0, 89, 255);
+}
+.proskl .titl{
+    text-align: center;
+    position: relative;
+    top: 9rem;
+    font-size: 35px;
+    color:rgb(235, 247, 252) ;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 700;
+    animation: up alternate 0.8s;
+    animation-delay: 0.1s;
+
+}
+@keyframes up{
+    0%{
+        transform: translateY(60px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+.skillbx2{
+    
+    position: relative;
+    top: 2rem;
+    right: -47rem;
+    background-color:rgb(38, 38, 39) ;
+    width: 30%;
+    padding: 80px 80px;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 10px;
+    border: solid 1px white;
+    color: white;
+}
+.skillbx1{
+     position: relative;
+     top:14rem;
+     left: 9rem;
+     background-color:rgb(38, 38, 39);
+     width: 30%;
+     padding: 90px 100px;
+     font-family: "Josefin Sans", sans-serif;
+     border-radius: 10px;
+     border: solid 1px white;
+     color: white;
+}
+.ja{
+    position: absolute;
+    bottom: 7rem;
+    right: 15.5rem;
+    padding: 20px 20px;
+    font-size: 17px;
+}
+.javascr{
+ height: 5px;
+ position: absolute;
+ bottom: 7rem;
+ width: 25%;
+ border-radius: 30px;
+ background-color: rgb(54, 109, 211);
+ animation: wid alternate 0.5s;
+ z-index: 1;
+}
+@keyframes wid{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+.py{
+    position: absolute;
+    bottom: 2rem;
+    right: 17.5rem;
+    padding: 20px 20px;
+    font-size: 15px;
+}
+.python{
+height: 5px;
+ position: absolute;
+ bottom: 2rem;
+ width: 20%;
+ border-radius: 30px;
+ background-color: rgb(54, 109, 211);
+ z-index: 1;
+ animation: wid1 alternate 0.5s;
+}
+@keyframes wid1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 20%;
+    }
+}
+.jv{
+    height: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    border-radius:30px ;
+    box-shadow: 0 0 0 rgb(37, 37, 37);
+    position: relative;
+    bottom: 1.7rem;
+
+}
+.pt{
+    height: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    border-radius:30px ;
+    box-shadow: 0 0 0 rgb(37, 37, 37);
+    position: relative;
+    top: 3rem;
+}
+
+.ht{
+   font-size: 17px;
+   position: absolute;
+   bottom: 11rem;
+   right: 19rem;
+}
+.html{
+    height: 5px;
+     position: absolute;
+     left: 4rem;
+     bottom: 9.94rem;
+     width: 50%;
+     border-radius: 30px;
+     background-color: rgb(54, 109, 211);
+     z-index: 1;
+     animation: wid2 alternate 0.5s;
+    }
+    @keyframes wid2{
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 50%;
+        }
+
+    }
+    .htm{
+        position: relative;
+        bottom: 3.64rem;
+        right: 2rem;
+        width: 120%;
+        height: 5px;
+        border-radius:30px ;
+        background-color: rgb(10, 10, 10);
+        box-shadow: 0 0 0 rgb(37, 37, 37);
+    }
+
+
+    .cs{
+        font-size: 17px;
+        position: absolute;
+        bottom: 7rem;
+        right: 19.5rem;
+     }
+     .css{
+         height: 5px;
+          position: absolute;
+          left: 4rem;
+          bottom: 6.01rem;
+          width: 47%;
+          border-radius: 30px;
+          background-color: rgb(54, 109, 211);
+          z-index: 1;
+          animation: wid3 alternate 0.5s;
+         }
+         @keyframes wid3{
+             0%{
+                 width: 0;
+             }
+             100%{
+                 width: 47%;
+             }
+     
+         }
+         .cs1{
+             position: relative;
+             bottom: 0.1rem;
+             right: 2rem;
+             width: 120%;
+             height: 5px;
+             border-radius:30px ;
+             background-color:rgb(10, 10, 10) ;
+             box-shadow: 0 0 0 rgb(37, 37, 37);
+         }
+
+         .rb{
+            position: absolute;
+            top: 10rem;
+            right: 15.5rem;
+            font-size: 16px;
+         }
+         .ruby{
+            height: 5px;
+             position: absolute;
+             left: 4rem;
+             bottom: 2.1rem;
+             width: 42%;
+             border-radius: 30px;
+             background-color: rgb(54, 109, 211);
+             z-index: 1;
+             animation: wid4 alternate 0.5s;
+            }
+            @keyframes wid4{
+                0%{
+                    width: 0;
+                }
+                100%{
+                    width: 42%;
+                }
+        
+            }
+            .rby{
+                position: relative;
+                bottom: -3.5rem;
+                right: 2rem;
+                width: 120%;
+                height: 5px;
+                border-radius:30px ;
+                background-color: rgb(10, 10, 10);
+                box-shadow: 0 0 0 rgb(37, 37, 37);
+            }
+
+            .r{
+                position: absolute;
+                left: 20rem;
+                top: 11.9rem;
+                font-family: "Josefin Sans", sans-serif;
+            }
+            .h{
+                position: absolute;
+                left: 20rem;
+                top: 3.9rem;
+                font-family: "Josefin Sans", sans-serif;
+
+            }
+            .c{
+                position: absolute;
+                left: 20rem;
+                top: 7.9rem;
+                font-family: "Josefin Sans", sans-serif;
+
+            }
+            .j{
+                position: absolute;
+                left: 20rem;
+                top: 4rem;
+                font-family: "Josefin Sans", sans-serif;
+
+            }
+            .p{
+                position: absolute;
+                left: 20rem;
+                top: 9rem;
+                font-family: "Josefin Sans", sans-serif;
+
+            }
+
+.jp{
+    position: relative;
+}
+            
+.jptitl{
+    margin-top: 13rem;
+    margin-left: 8rem;
+    font-family: "Noto Serif JP", serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(35, 35, 35);
+    width: 80%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px,rgb(rgb(40, 39, 39), rgb(52, 53, 52), rgb(39, 39, 40)) ;
+}
+.kei{
+    position: absolute;
+    left: 13.5rem;
+    top: 12rem;
+    z-index: 1;
+    text-align: center;
+
+    background-color: rgb(15, 80, 165);
+    padding: 50px 50px;
+    border-radius: 20px;
+    transition:all ease 0.5s;
+}
+
+.han{
+    position: absolute;
+    left: 45rem;
+    top: 12rem;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(15, 80, 165);
+    padding: 50px 50px;
+    border-radius: 20px;
+    transition:ease-in 0.5s;
+}
+.han:hover,.kei:hover{
+    transform: translateY(-20px);
+    padding: 65px 65px;
+    background-color: rgb(8, 112, 249);
+
+}
+.han p{
+    color: rgb(255, 255, 255);
+    font-family: "Josefin Sans", sans-serif;
+}
+.ha1{
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ke1{
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.kei p{
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+@media (max-width:770px){
+     body,html{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+     }
+     .skillbx1{
+        width: 85%;
+        margin-left: -7.4rem;
+     }
+     .ht, .cs, .rb{
+        margin-right:-4rem;
+
+     }
+     .h,.c,.r{
+        margin-left: -3.5rem;
+     }
+     .htm{
+        width: 160%;
+     }
+     .cs1{
+        width: 160%;
+     }
+     .rby{
+        width: 160%;
+     }
+     .proskl .titl{
+        font-size: 25px;
+     }
+     .jptitl{
+        margin-top: 19rem;
+        margin-bottom: 20px;
+        width: 75%;
+        margin-left: 3rem;
+        padding-bottom: 670px;
+     }
+     .skillbx2{
+          margin-top: 20rem;
+          margin-left:-45.3rem;
+          width: 85%;
+
+     }
+     .j{
+        margin-left: -4rem;
+     }
+     .p{
+        margin-left: -4rem;
+     }
+     .ja,.py{
+        margin-right:-5rem ;
+     }
+     .han{
+        margin-top: 18rem;
+        margin-left:-39rem;
+        width: 50%;
+        padding: 25px;
+        
+     }
+     .kei{
+        padding: 25px;
+        margin-left: -7.6rem;
+        width: 50%;
+     }
+     .porthead a{
+        display: block;
+        border:1px solid rgb(0, 98, 255) ;
+        border-width:0% ;
+        font-size: 10px;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(14, 71, 164);
+        flex-basis: 0;
+
+        }
+
+     header{
+        width: 100%;
+     }
+     h3{
+        font-size: 15px;
+     }
+     .porthead{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+        display: none;
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(7, 7, 7);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0px;
+        padding-left: 70px;
+        z-index: 1000;
+        transition: right 1s ease;
+        padding-top: 70px; 
+        border-radius: 10px;
+        margin-top: 30px;
+        padding-right: 70px;
+        
+     }
+     .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+     }
+     .openMenu{
+        display: block;
+     }
+}

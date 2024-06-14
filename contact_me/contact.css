@@ -1,0 +1,233 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    height: 230vh;
+    width: 100%;
+    background-color: rgb(5, 71, 164);
+    font-family: "Poetsen One", sans-serif; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+
+}
+h3{
+    color: rgb(43, 168, 226);
+    font-size: 30px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+}
+.porthead{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-right: 20px;
+  
+}
+.openMenu{
+    font-size: 25px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(0, 89, 255);
+}
+.closeMenu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:rgb(0, 89, 255);
+}
+.porthead li a {
+    color: white;
+    margin: 20px 10px;
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.8s;
+}
+.porthead li a:hover{
+    color: rgb(54, 109, 211);
+
+}
+form{
+    border: solid 1.5px rgb(47, 5, 105);
+    position: relative;
+    left: 17rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(21, 2, 64);
+}
+.c1:focus,.c2:focus, .c3:focus{
+    border: solid 1px rgb(4, 172, 244);
+}
+.c1{
+    margin-bottom: 18px;
+    padding: 12px 12px;
+    border: none;
+    width: 90%;
+    border-radius: 40px;
+    background-image: linear-gradient(60deg,rgb(176, 101, 214),rgb(78, 18, 199));
+}
+.c2{
+    margin-bottom: 40px;
+    padding: 12px 12px;
+    border: none;
+    width: 90%;
+    border-radius: 40px;
+    background-image: linear-gradient(60deg,rgb(176, 101, 214),rgb(78, 18, 199));
+}
+.c3{
+    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(60deg,rgb(176, 101, 214),rgb(78, 18, 199));
+}
+ 
+.bt{
+    position: relative;
+    width: 30%;
+    margin-left: 14rem;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient(120deg,rgb(69, 122, 202),rgb(2, 56, 138));
+    border: solid 1px white;
+    color: white;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.bt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    inset: 0;
+    z-index: -1;
+    border-radius: 30px;
+    background-image: linear-gradient(120deg,rgb(2, 56, 138),rgb(69, 122, 202));
+    opacity: 0;
+    transition:opacity 0.5s ;
+}
+.bt:hover::before{
+    opacity: 1;
+}
+
+.cnt{
+    margin-bottom: 8px;
+    margin-top: 7rem;
+    text-align: center;
+    font-family:"Noto Serif JP", serif;
+    color: white;
+    font-size: 25px;
+
+}
+@media (max-width:770px){
+    body,html{
+       overflow-x: hidden;
+       width: 100%;
+       height: 100%;
+       padding: 0;
+       margin: 0;
+    }
+    form{
+        width: 80%;
+        margin-left: -14rem;
+        margin-top: 6rem;
+        padding: 50px;
+    }
+    .bt{
+        margin-left: 3.3rem;
+        
+    }
+    .porthead a{
+        display: block;
+        border:1px solid rgb(0, 98, 255) ;
+        border-width:0% ;
+        font-size: 10px;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(14, 71, 164);
+        flex-basis: 0;
+
+        }
+
+     header{
+        width: 100%;
+     }
+     h3{
+        font-size: 15px;
+     }
+     .porthead{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+        display: none;
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(7, 7, 7);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0px;
+        padding-left: 70px;
+        z-index: 1000;
+        transition: right 1s ease;
+        padding-top: 70px; 
+        border-radius: 10px;
+        margin-top: 30px;
+        padding-right: 70px;
+        
+     }
+     .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+     }
+     .openMenu{
+        display: block;
+     }
+     .cnt{
+        font-size: 20px;
+     }
+}

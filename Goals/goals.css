@@ -1,0 +1,237 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.openMenu{
+    font-size: 25px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: rgb(0, 89, 255);
+}
+.closeMenu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:rgb(0, 89, 255);
+}
+body{
+    height: 230vh;
+    width: 100%;
+    background-color: rgb(5, 71, 164);
+    font-family: "Poetsen One", sans-serif; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+
+}
+h3{
+    color: rgb(43, 168, 226);
+    font-size: 30px;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+}
+.porthead{
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin-right: 20px;
+  
+}
+.porthead li a {
+    color: white;
+    margin: 20px 10px;
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.8s;
+}
+.porthead li a:hover{
+    color: rgb(54, 109, 211);
+
+}
+
+.sk{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    margin-top: 16rem;
+    margin-left: 7.9rem;
+    text-align: center;
+    width: 80%;
+}
+.progl, .langgl, .busigl{
+    position: relative;
+    bottom: 3.5rem;
+    color: white;
+    background-color: rgb(42, 41, 41);
+    padding: 25px 19px;
+    padding-top: 70px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.progl:hover , .langgl:hover, .busigl:hover{
+    transform: translateY(-10px);
+    background-color:rgb(26, 33, 45) ; 
+    color: rgb(235, 229, 229);
+}
+.progl h2, .langgl h2 , .busigl h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: "Noto Serif JP", serif;
+}
+.progl h2, .langgl h2 , .busigl h2{
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+}
+
+.progl i , .langgl i , .busigl i {
+    font-size: 30px;
+    position: absolute;
+    bottom: 13rem;
+    margin-left: -1rem;
+    color: rgb(54, 109, 211);
+    margin-bottom: 0.5rem;
+}
+.txtbx2{
+    text-align: center;
+    position: relative;
+    top: 8rem;
+   
+}
+
+.txtbx2 h1{
+     font-family: "Noto Serif JP", serif;
+     font-size: 30px;
+     font-weight: 700;
+     color: whitesmoke;
+}
+.txtbx2 p{
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+@media (max-width:770px){
+    body{
+        
+        overflow-x:auto;
+        margin: 0;
+        padding-bottom: 200px;
+        width: 100%;
+        height: 150vh;
+    
+    }
+    .sk{
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 40px;
+        row-gap: 10px;
+        margin-left: 2.5rem;
+        padding-bottom: 1000px;
+        margin-top: 13rem;
+
+    }
+    .progl, .langgl, .busigl{
+        padding: 20px;
+        padding-top: 60px;
+        height: 200px;
+
+
+    }
+    .progl h2, .langgl h2 , .busigl h2{
+        font-size: 18px;
+    }
+    .progl i , .langgl i , .busigl i {
+           margin-bottom:-3rem;
+           font-size: 20px;
+    }
+    .progl p, .langgl p , .busigl p{
+        font-size: 10px;
+    }
+    .txtbx2 h1{
+        font-size: 25px;
+    }
+    .txtbx2 p{
+       font-size: 15px; 
+    }
+    .txtbx2{
+        margin-top: -2rem;
+    }
+    .porthead a{
+        display: block;
+        border:1px solid rgb(0, 98, 255) ;
+        border-width:0% ;
+        font-size: 10px;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 30px;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: rgb(14, 71, 164);
+        flex-basis: 0;
+
+        }
+
+     header{
+        width: 100%;
+     }
+     h3{
+        font-size: 15px;
+     }
+     .porthead{
+        font-size: 10px;
+        font-weight: 300;
+        text-align: center;
+        display: none;
+        height: 50vh;
+        width: 100%;
+        background-color: rgb(7, 7, 7);
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0px;
+        padding-left: 70px;
+        z-index: 1000;
+        transition: right 1s ease;
+        padding-top: 70px; 
+        border-radius: 10px;
+        margin-top: 30px;
+        padding-right: 70px;
+        
+     }
+     .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+     }
+     .openMenu{
+        display: block;
+ }
+    }
+  
